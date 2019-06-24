@@ -37,6 +37,6 @@ public class FakeApiService implements ApiService {
     @Override
     public void deleteUser(User user) {
         // Deletes the user in argument into the List<User> field
-        if (this.users.contains(user)) this.users.remove(user);
+        this.users.remove(user);
     }
 }
